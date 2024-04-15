@@ -1,8 +1,20 @@
 <script>
+import { ref } from 'vue';
+import { NButton, NModal, NForm, NFormItem, NInput } from 'naive-ui';
+import axios from 'axios';
 import { ArrowBack, ArrowForward } from "@vicons/ionicons5";
 import { defineComponent } from "vue";
 import { NCarousel, NCard } from "naive-ui";
 import banner from "@/Components/banner.vue";
+
+axios.post("/getCR")
+        .then((response) => {
+
+            console.log(response.data);
+        })
+        .catch((error) => {
+            console.log(error);
+        });
 
 export default defineComponent({
   components: {
@@ -12,6 +24,7 @@ export default defineComponent({
     NCard,
     banner
 }
+
 });
 </script>
 <template>

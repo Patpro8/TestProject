@@ -5,6 +5,7 @@ import InputLabel from '@/Components/InputLabel.vue';
 import PrimaryButton from '@/Components/PrimaryButton.vue';
 import TextInput from '@/Components/TextInput.vue';
 import { Head, Link, useForm } from '@inertiajs/vue3';
+import banner from "@/Components/banner.vue";
 
 const form = useForm({
     name: '',
@@ -21,6 +22,7 @@ const submit = () => {
 </script>
 
 <template>
+            <banner></banner>
     <GuestLayout>
         <Head title="Register" />
 

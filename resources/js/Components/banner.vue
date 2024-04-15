@@ -1,6 +1,7 @@
 <script setup>
 import { h, defineProps } from "vue";
 import { NIcon, NButton, NDropdown, NTooltip } from "naive-ui";
+import { Link } from '@inertiajs/vue3';
 
 const renderIcon = (iconName) => {
     return () => {
@@ -34,10 +35,18 @@ const props = defineProps({
                     <n-button>Menu</n-button>
                 </n-dropdown>-->
             </div>
-            <NButton>Button 1</NButton>
-            <NButton>Button 2</NButton>
-            <NButton>Button 3</NButton>
-            <NButton>Button 4</NButton>
+            <Link href="/Cursos">
+            <NButton>Cursos</NButton>
+            </Link>            
+            <Link href="/Continguts">
+            <NButton>Continguts</NButton>
+            </Link>            
+            <Link href="/login">
+            <NButton>Login</NButton>
+            </Link>
+            <Link href="/register">
+            <NButton>Register</NButton>
+            </Link>        
         </div>
     </div>
 </template>
