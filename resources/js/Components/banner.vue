@@ -72,7 +72,7 @@ let loggedOptions = [
         <div class="banner">
             <div id="container">
                 <a href="" class="logo">
-                    <img src="https://cdn.pixabay.com/photo/2013/07/13/14/05/location-162102_1280.png" alt="Flowbite Logo" />
+                    <img src="../../../public/Img/p.png" alt="Flowbite Logo" />
                     <span class="brand-name">Entorn Virtual d’Aprenentatge</span>
                 </a>
 

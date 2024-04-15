@@ -1,4 +1,3 @@
-
 <script>
 import { ArrowBack, ArrowForward } from "@vicons/ionicons5";
 import { defineComponent } from "vue";
@@ -19,35 +18,29 @@ export default defineComponent({
     <banner></banner>
     <div class="container">
         <n-carousel autoplay>
-          <img class="carousel-img" src="">
-          <img class="carousel-img" src="">
-          <img class="carousel-img" src="">
+          <img class="carousel-img" src="../../../public/Img/j.png">
+          <img class="carousel-img" src="../../../public/Img/k.png">
+          <img class="carousel-img" src="../../../public/Img/m.png">
         </n-carousel>
   
       <div class="card-container">
         <n-card class="card">
-          <p class="card-title">Información sobre el Castillo de Dalí</p>
+          <p class="card-title">Apren amb nosaltres</p>
           <div class="card-content">
-            <p class="card-text">Ubicado en el corazón de Figueres, Cataluña, el Castillo de Dalí es un lugar emblemático lleno de historia y creatividad.</p>
-            <p class="card-text">Explora su arquitectura única y descubre la fascinante relación del lugar con el artista Salvador Dalí.</p>
+            <p class="card-text">Lorem Ipsum es el término para referirnos a un texto falso que simula caracteres latinos y que utilizamos para ver de un modo rápido cómo quedaría una página con el contenido; antes de tener el texto definitivo, para componer fácilmente la maqueta</p>
+            <p class="card-text">Lorem Ipsum es el término para referirnos a un texto falso que simula caracteres latinos y que utilizamos para ver de un modo rápido cómo quedaría una página con el contenido; antes de tener el texto definitivo, para componer fácilmente la maqueta</p>
           </div>
         </n-card>
         
         <n-card class="card">
-          <p class="card-title">Otro lugar interesante en Figueres</p>
+          <p class="card-title">Aprenentatge divertit</p>
           <div class="card-content">
-            <p class="card-text">Descubre la historia y la cultura de este encantador destino turístico en Cataluña.</p>
-            <p class="card-text">¡No te pierdas la oportunidad de visitar este lugar increíble!</p>
+            <p class="card-text">Lorem Ipsum es el término para referirnos a un texto falso que simula caracteres latinos y que utilizamos para ver de un modo rápido cómo quedaría una página con el contenido; antes de tener el texto definitivo, para componer fácilmente la maqueta</p>
+            <p class="card-text">Lorem Ipsum es el término para referirnos a un texto falso que simula caracteres latinos y que utilizamos para ver de un modo rápido cómo quedaría una página con el contenido; antes de tener el texto definitivo, para componer fácilmente la maqueta</p>
           </div>
         </n-card>
       </div>
-  
-      <div class="image-container">
-        <img src="" alt="Dali" class="card-img">
-        <img src="" alt="juguets" class="card-img">
-      </div>
-  
-      
+
     </div>
   </template>
   <style scoped>
