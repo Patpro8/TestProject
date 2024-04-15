@@ -16,92 +16,32 @@ const props = defineProps({
     options: Array
 });
 
-let unloggedOptions = [
-    {
-        label: 'Home',
-        key: "home",
-        icon: renderIcon('home')
-    },
-    {
-        label: 'Login',
-        key: "login",
-        icon: renderIcon('log-in')
-    }
-];
-
-let loggedOptions = [
-    {
-        label: 'Home',
-        key: "home",
-        icon: renderIcon('home')
-    },
-    {
-        label: 'Mi cuenta',
-        key: "profile",
-        icon: renderIcon('user-circle-outline')
-    },
-    {
-        label: 'Mis Audioguias',
-        key: "editProfile",
-        icon: renderIcon('pencil')
-    },
-    {
-        label: 'Panel de Administración',
-        key: "adminpanel",
-        icon: renderIcon('log-out')
-    },
-    {
-        label: 'Logout',
-        key: "logout",
-        icon: renderIcon('log-out')
-    }
-];
 </script>
 
 <template>
-    <!DOCTYPE html>
-    <html lang="en">
-
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Navigation</title>
-    </head>
-
-    <body>
-        <div class="banner">
-            <div id="container">
-                <a href="" class="logo">
-                    <img src="../../../public/Img/p.png" alt="Flowbite Logo" />
-                    <span class="brand-name">Entorn Virtual d’Aprenentatge</span>
-                </a>
-
-            </div>
-            <div id="menu">
-                <ul id="show">
-                    <li v-for="option in options">
-                        <n-tooltip trigger="hover">
-                            <template #trigger>
-                                <n-button>
-                                    <a :href="option.href" class="name">
-                                        {{ option.label }}
-                                    </a>
-                                </n-button>
-                            </template>
-                            <span>{{ option.label }}</span>
-                        </n-tooltip>
-                    </li>
-                </ul>
-                <div id="responsive_menu">
-                    <!--<n-dropdown :options="props.auth.user ? loggedOptions : unloggedOptions">
-                        <n-button>Menu</n-button>
-                    </n-dropdown>-->
-                </div>
-            </div>
+    <div class="banner">
+        <div id="container">
+            <a href="" class="logo">
+                <img src="../../../public/Img/p.png" alt="Flowbite Logo" />
+                <span class="brand-name">Entorn Virtual d’Aprenentatge</span>
+            </a>
         </div>
-    </body>
-    </html>
+        <div id="menu">
+            <ul id="show">
+            </ul>
+            <div id="responsive_menu">
+                <!--<n-dropdown :options="props.auth.user ? loggedOptions : unloggedOptions">
+                    <n-button>Menu</n-button>
+                </n-dropdown>-->
+            </div>
+            <NButton>Button 1</NButton>
+            <NButton>Button 2</NButton>
+            <NButton>Button 3</NButton>
+            <NButton>Button 4</NButton>
+        </div>
+    </div>
 </template>
+
 
 <style>
 /* styles.css */
@@ -110,6 +50,11 @@ let loggedOptions = [
     color: white;
     font-size: 15px;
     font-weight: 600;
+}
+
+#menu .n-button {
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 #responsive_menu {
@@ -164,7 +109,7 @@ body {
 #menu {
     display: flex;
     grid-area: 1 / 2 / 2 / 3;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
 }
 
